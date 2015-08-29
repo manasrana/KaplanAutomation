@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="KaplanAutomationReport" parallel="tests"
+	thread-count="2">
+	<groups>
+		<run>
+			<exclude name="brokenTests" />
+			<include name="checkinTests" />
+		</run>
+	</groups>
+	<test name="TestAutomation" preserve-order="true">
+		<classes>
+			<class name="com.kaplan.tests.TestScenario1_3" />
+		</classes>
+	</test>
+</suite>

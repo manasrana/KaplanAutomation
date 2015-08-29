@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<description>Test Automation - SmokeTest </description>	
+	<import file="../build.xml"/>
+	<property name="smoke-test-output-dir" value="smoke-test-report" />
+	<property name="smoke-test-suite-dir" value="smoke-test-suites" />
+
+	<!-- ============================================================================== 
+		*** All smoke tests call and parent folder check *** =========================== 
+		*** START *** ================================== -->
+
+	<target name="run-smoke-test" id="properties-classpath" depends="compile-source">
+		<run-test basereportdir="${reportfolder}" reportdirname="${smoke-test-output-dir}" testngxml="${smoke-test-suite-dir}/smoke-test.xml" />
+	</target>
+
+</project>

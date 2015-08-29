@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Kaplan Automation Framework" basedir="." default="compile-source">
+	<description>Functional Test Automation</description>
+
+	<property file="${basedir}/project.properties" />
+	<property name="test.build.dir" value="${basedir}/classes" />
+	<property name="test.src.dir" value="${basedir}/src" />
+	<property name="lib.dir" value="${basedir}/lib" />
+
+	<property name="reportfolder" value="${basedir}/test-reports" />
+	<property name="testngreportfolder" value="${reportfolder}" />
+	<property name="junitreportfolder" value="${reportfolder}/junit-reports" />
+	<property name="reportngreportfolder" value="${reportfolder}/reportng-reports" />
+	<property name="testsuitefolder" value="${basedir}/test-suites" />
+
+	<taskdef resource="testngtasks" classpath="${basedir}/lib/testng-6.8.jar" />
+
+	<path id="properties-classpath">
+		<fileset dir="${basedir}/src/properties">
+			<include name="**/*.properties" />
+		</fileset>
+		<pathelement location="${build}" />
+	</path>
+
+	<!-- Selenium WebDriver Classpath -->
+	<path id="remote-control.classpath">
+		<!-- Selenium Driver must be first in classpath -->
+		<fileset dir="${lib.dir}">
+			<include name="selenium-server-standalone-${version}*.jar" />
+		</fileset>
+		<pathelement path="${java.class.path}/" />
+	</path>
+
+	<!-- Selenium Framework Classpath -->
+	<path id="kaplan.classpath">
+		<pathelement path="${java.class.path}/" />
+		<pathelement path="${properties-classpath}" />
+		<fileset dir="${lib.dir}">
+			<include name="**/*.jar">
+			</include>
+		</fileset>
+		<pathelement path="${basedir}/classes" />
+	</path>
+
+	<target name="init" description="clean destination dirs and copy related resources">
+		<delete dir="${reportfolder}" />
+		<copy todir="${test.build.dir}">
+			<fileset dir="${basedir}/src/properties" includes="**/*.properties" />
+		</copy>
+		<copy todir="${test.build.dir}">
+			<fileset dir="${basedir}/src/testResources" includes="**/*.*" />
+		</copy>
+		<mkdir dir="${reportfolder}" />
+	</target>
+
+	<target name="compile-source" depends="init" description="compile the automation source code">
+		<!-- Compile the java code from ${src} into ${build} -->
+		<mkdir dir="${test.build.dir}" />
+		<javac includeantruntime="false" srcdir="${test.src.dir}" debuglevel="lines, vars, source" classpathref="kaplan.classpath" destdir="${test.build.dir}" />
+	</target>
+
+	<import file="testng-ant-integration/smoke-tests-build.xml" />
+
+
+	<!-- 
+		==============================================================================
+			           *** All tests call and parent folder check ***
+		===========================  *** START ***  ==================================
+	-->
+	<target name="-setup">
+		<condition property="allFoldercheck">
+			<equals arg1="${output.folder.All}" arg2="${testngreportfolder}/all-report" />
+		</condition>
+		<condition property="smokeFolderCheck">
+			<isset property="output.folder.smoke" />
+		</condition>
+	</target>
+
+	<!-- =======================  *** END ***  =============================== -->
+
+	<!-- ==============================================================================
+				           *** macrodef task to run test-suite ***
+		===========================  *** START ***  ================================== -->
+	<macrodef name="run-test">
+		<attribute name="baseReportDir" />
+		<attribute name="reportDirName" />
+		<attribute name="testNGXML" />
+		<sequential>
+			<property name="test-dir" location="@{baseReportDir}/@{reportDirName}" />
+			<property name="test.log.dir" location="${test-dir}/logs" />
+			<property name="test.log.output" value="${test.log.dir}/output.log" />
+			<mkdir dir="${test.log.dir}" />
+			<record name="${test.log.output}" action="start" />
+			<testng classpathref="kaplan.classpath" listeners="com.kaplan.utils.CustomTestListener" outputdir="${test-dir}">
+				<xmlfileset dir="${testsuitefolder}" includes="@{testNGXML}" />
+			</testng>
+			<xslt in="${test-dir}/testng-results.xml" style="xslt/testng-results.xsl" out="${test-dir}/test-result/index.html">
+				<param name="testNgXslt.outputDir" expression="${test-dir}/test-result" />
+				<param name="testNgXslt.showRuntimeTotals" expression="true" />				
+				<classpath refid="kaplan.classpath" />
+			</xslt>
+			<record name="${test.log.output}" action="stop" />
+		</sequential>
+	</macrodef>
+	<!-- =======================  *** END ***  =============================== -->
+
+</project>

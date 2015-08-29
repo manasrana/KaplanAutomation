@@ -1,0 +1,146 @@
+   [testng] [TestNG] Running:
+   [testng]   E:\workspace\java_webdriver\KaplanAutomation\test-suites\smoke-test-suites\smoke-test.xml
+   [testng] 
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: best-match
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection leased: [id: 0][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Opening connection {}->http://127.0.0.1:7055
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.HttpClientConnectionOperator] - Connecting to /127.0.0.1:7055
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.HttpClientConnectionOperator] - Connection established 127.0.0.1:61133<->127.0.0.1:7055
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Executing request POST /hub/session HTTP/1.1
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Target auth state: UNCHALLENGED
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Proxy auth state: UNCHALLENGED
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 >> POST /hub/session HTTP/1.1
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 >> Content-Length: 105
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 >> Host: 127.0.0.1:7055
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 >> Connection: Keep-Alive
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 >> "POST /hub/session HTTP/1.1[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 >> "Content-Length: 105[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 >> "Host: 127.0.0.1:7055[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 >> "[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 >> "{"desiredCapabilities":{"browserName":"firefox","version":"","platform":"ANY"},"requiredCapabilities":{}}"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 << "content-type: application/json; charset=UTF-8[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 << "connection: close[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 << "content-length: 420[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 << "server: httpd.js[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 << "date: Sat, 15 Aug 2015 12:49:19 GMT[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 << "[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 << HTTP/1.1 200 OK
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 << content-type: application/json; charset=UTF-8
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 << connection: close
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 << content-length: 420
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 << server: httpd.js
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-0 << date: Sat, 15 Aug 2015 12:49:19 GMT
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-0 << "{"name":"newSession","sessionId":"8b758651-bc7f-4930-b167-e12d4710f822","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":true,"platform":"WINDOWS","rotatable":false,"takesScreenshot":true,"version":"33.0","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"acceptSslCerts":true}}"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-0: Shutdown connection
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Connection discarded
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-0: Close connection
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection released: [id: 0][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: best-match
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection leased: [id: 1][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Opening connection {}->http://127.0.0.1:7055
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.HttpClientConnectionOperator] - Connecting to /127.0.0.1:7055
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.HttpClientConnectionOperator] - Connection established 127.0.0.1:61134<->127.0.0.1:7055
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Executing request POST /hub/session/8b758651-bc7f-4930-b167-e12d4710f822/url HTTP/1.1
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Target auth state: UNCHALLENGED
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Proxy auth state: UNCHALLENGED
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 >> POST /hub/session/8b758651-bc7f-4930-b167-e12d4710f822/url HTTP/1.1
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 >> Content-Type: application/json; charset=utf-8
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 >> Content-Length: 47
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 >> Host: 127.0.0.1:7055
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 >> Connection: Keep-Alive
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 >> "POST /hub/session/8b758651-bc7f-4930-b167-e12d4710f822/url HTTP/1.1[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 >> "Content-Length: 47[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 >> "Host: 127.0.0.1:7055[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 >> "[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 >> "{"url":"http://kbr.qa.kaplan.com/Student/Home"}"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 << "content-type: application/json; charset=UTF-8[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 << "connection: close[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 << "content-length: 87[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 << "server: httpd.js[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 << "date: Sat, 15 Aug 2015 12:49:23 GMT[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 << "[\r][\n]"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.wire] - http-outgoing-1 << "{"name":"get","sessionId":"8b758651-bc7f-4930-b167-e12d4710f822","status":0,"value":""}"
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 << HTTP/1.1 200 OK
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 << content-type: application/json; charset=UTF-8
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 << connection: close
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 << content-length: 87
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 << server: httpd.js
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.headers] - http-outgoing-1 << date: Sat, 15 Aug 2015 12:49:23 GMT
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-1: Shutdown connection
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Connection discarded
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-1: Close connection
+   [testng] 15-08-2015 18:19 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection released: [id: 1][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 15-08-2015 18:20 INFO  [com.kaplan.tests.TestScenario1_3] - Test for Scenario1
+   [testng] E:\workspace\java_webdriver\KaplanAutomation\src\testresources\testdata\TestData_Sheet.xlsx
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - Row No.: 0
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - Row No.: 1
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - columnIndex ::0 Numeric value: 1.0
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - columnIndex ::1
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - rowTestCaseIdExist ::true
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - String value: SYLLABUSNAME rowNameAttribute ::SYLLABUSNAME rowValueAttribute ::null rowTestCaseId ::1.0
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - columnIndex ::2
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - rowTestCaseIdExist ::true
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - String value: Real Property 1 rowNameAttribute ::SYLLABUSNAME rowValueAttribute ::Real Property 1 rowTestCaseId ::1.0
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - Row No.: 3
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - Other Type ::1
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - Row No.: 20
+   [testng] 15-08-2015 18:20 DEBUG [com.kaplan.utils.ExcelReader] - Other Type ::1
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: best-match
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection leased: [id: 2][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Opening connection {}->http://127.0.0.1:7055
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.HttpClientConnectionOperator] - Connecting to /127.0.0.1:7055
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-2: Shutdown connection
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Connection discarded
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-2: Close connection
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection released: [id: 2][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: best-match
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection leased: [id: 3][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Opening connection {}->http://127.0.0.1:7055
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.HttpClientConnectionOperator] - Connecting to /127.0.0.1:7055
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-3: Shutdown connection
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Connection discarded
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-3: Close connection
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection released: [id: 3][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.client.protocol.RequestAddCookies] - CookieSpec selected: best-match
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.client.protocol.RequestAuthCache] - Auth cache not set in the context
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection request: [route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection leased: [id: 4][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Opening connection {}->http://127.0.0.1:7055
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.HttpClientConnectionOperator] - Connecting to /127.0.0.1:7055
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-4: Shutdown connection
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.execchain.MainClientExec] - Connection discarded
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] - http-outgoing-4: Close connection
+   [testng] 15-08-2015 18:20 DEBUG [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] - Connection released: [id: 4][route: {}->http://127.0.0.1:7055][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+   [testng] 
+   [testng] ===============================================
+   [testng] KaplanAutomationReport
+   [testng] Total tests run: 1, Failures: 1, Skips: 0
+   [testng] Configuration Failures: 1, Skips: 0
+   [testng] ===============================================
+   [testng] 
+   [testng] The tests failed.
+     [xslt] Processing E:\workspace\java_webdriver\KaplanAutomation\test-reports\smoke-test-report\testng-results.xml to E:\workspace\java_webdriver\KaplanAutomation\test-reports\smoke-test-report\test-result\index.html
+     [xslt] Loading stylesheet E:\workspace\java_webdriver\KaplanAutomation\xslt\testng-results.xsl

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [KaplanAutomationReport]" parallel="tests">
+  <test name="TestAutomation(failed)" parallel="tests">
+    <classes>
+      <class name="com.kaplan.tests.TestScenario1_3">
+        <methods>
+          <include name="setUp"/>
+          <include name="TestScenario1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.kaplan.tests.TestScenario1_3 -->
+    </classes>
+  </test> <!-- TestAutomation(failed) -->
+</suite> <!-- Failed suite [KaplanAutomationReport] -->
